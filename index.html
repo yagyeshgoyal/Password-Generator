@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
@@ -12,8 +13,8 @@
         <div class="display-container">
             <input readonly placeholder="Password" class="display" data-passwordDisplay>
 
-            <button data-copy>
-                <span data-copyMsg></span>
+            <button class="copyBtn" data-copy>
+                <span class = "tooltip" data-copyMsg></span>
                 <img src="images/copy-content-vector-icon-document-260nw-1260468262.webp" alt="copy" width = "23" height="23">
 
             </button>
@@ -31,22 +32,22 @@
             <input type="range" min="1" max="20" class="slider" step="1", data-lengthSlider>
             
             <!-- checkboxes -->
-             <div>
+             <div class="check">
                 <input type="checkbox"  id="uppercase">
                 <label for="uppercase">Includes Uppercase letter</label>
              </div>
 
-             <div>
+             <div class="check">
                 <input type="checkbox"  id="lowercase">
                 <label for="lowercase">Includes Lowercase letter</label>
              </div>
 
-             <div>
+             <div class="check">
                 <input type="checkbox"  id="numbers">
                 <label for="numbers"> Numbers letter</label>
              </div>
 
-             <div>
+             <div class="check">
                 <input type="checkbox"  id="symbols">
                 <label for="symbols">Symbols letter</label>
              </div>
@@ -56,7 +57,7 @@
 
              <div class="strength-container">
                 <p>Strength</p>
-                <div data-indicator></div>
+                <div class="indicator" data-indicator></div>
              </div>
 
              <!-- generate password -->
